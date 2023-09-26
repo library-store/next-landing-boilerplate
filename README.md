@@ -1,11 +1,9 @@
-# Starter for Next JS 13+, Tailwind CSS 3.3 and TypeScript
+# Dự án mẫu Next JS 13+, Tailwind CSS 3.3 và TypeScript
 
 ### Features
 
-- ⚡ [Next.js](https://nextjs.org) with App Router and Page Router support
-- 🔥 Type checking [TypeScript](https://www.typescriptlang.org)
-- 💎 Integrate with [Tailwind CSS](https://tailwindcss.com)
-- ✅ Strict Mode for TypeScript and React 18
+- 🚀 [Next.js](https://nextjs.org) 13+ with [React 18](https://reactjs.org/blog/2021/06/08/the-plan-for-react-18.html) support
+- 🎨 [Tailwind CSS](https://tailwindcss.com) 3.3 with [JIT mode](https://tailwindcss.com/docs/just-in-time-mode)
 - 📏 Linter with [ESLint](https://eslint.org) (default NextJS, NextJS Core Web Vitals, Tailwind CSS and Airbnb configuration)
 - 💖 Code Formatter with [Prettier](https://prettier.io)
 - 🦊 Husky for Git Hooks
@@ -15,14 +13,6 @@
 - 🤖 SEO metadata, JSON-LD and Open Graph tags with Next SEO
 - 🗺️ Sitemap.xml and robots.txt with next-sitemap
 - ⚙️ [Bundler Analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
-- 🌈 Include a FREE minimalist theme
-- 💯 Maximize lighthouse score
-
-Built-in feature from Next.js:
-
-- ☕ Minify HTML & CSS
-- 💨 Live reload
-- ✅ Cache busting
 
 ### Requirements
 
@@ -30,29 +20,31 @@ Built-in feature from Next.js:
 
 ### Getting started
 
-Run the following command on your local environment:
+Run the following command on your local environment used npm or yarn:
 
 ```shell
-git clone --depth=1 https://github.com/ixartz/Next-js-Boilerplate.git my-project-name
-cd my-project-name
 npm install
 ```
 
 Then, you can run locally in development mode with live reload:
 
 ```shell
-npm run dev
-```
+# npm
+npm install # install dependencies
+npm run dev # run project
 
-Open http://localhost:3000 with your favorite browser to see your project.
+# yarn
+yarn # install dependencies
+yarn dev # run project
+
+# Then open http://localhost:3000 with your browser to see your project.
+```
 
 ### Project structure
 
 ```shell
 .
 ├── README.md                       # README file
-├── __mocks__                       # Mocks for testing
-├── .github                         # GitHub folder
 ├── .husky                          # Husky configuration
 ├── .vscode                         # VSCode configuration
 ├── public                          # Public assets folder
@@ -63,18 +55,8 @@ Open http://localhost:3000 with your favorite browser to see your project.
 │   ├── styles                      # Styles folder
 │   ├── templates                   # Default template
 │   └── utils                       # Utility functions
+|   └── components                  # Components (buttons, cards, ...)
+|   └── assets                      # Assets (images, icons, ...)
 ├── tailwind.config.js              # Tailwind CSS configuration
 └── tsconfig.json                   # TypeScript configuration
 ```
-
-### Customization
-
-You can easily configure Next js Boilerplate by making a search in the whole project with `FIXME:` for making quick customization. Here is some of the most important files to customize:
-
-- `public/apple-touch-icon.png`, `public/favicon.ico`, `public/favicon-16x16.png` and `public/favicon-32x32.png`: your website favicon, you can generate from https://favicon.io/favicon-converter/
-- `src/styles/global.css`: your CSS file using Tailwind CSS
-- `src/utils/AppConfig.ts`: configuration file
-- `src/templates/Main.tsx`: default theme
-- `next-sitemap.config.js`: sitemap configuration
-
-You have access to the whole code source if you need further customization. The provided code is only example for you to start your project. The sky is the limit 🚀.
