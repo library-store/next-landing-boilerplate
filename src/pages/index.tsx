@@ -7,14 +7,7 @@ const Index = () => {
   const router = useRouter();
 
   return (
-    <Main
-      meta={
-        <Meta
-          title="Next.js Boilerplate Presentation"
-          description="Next js Boilerplate is the perfect starter code for your project. Build your React application with the Next.js framework."
-        />
-      }
-    >
+    <Main meta={<Meta title="Title" description="Meta description" />}>
       <div className="flex w-full flex-1 flex-col items-center justify-center text-center">
         <h1 className="text-6xl font-bold">
           <a href={router.basePath} target="_blank" rel="noopener noreferrer">
